@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--=============== FLATICON ===============-->
+    <link
+     rel="stylesheet" 
+     href="https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css" 
+     />
+
+
+
+    <!--=============== SWIPER CSS===============-->
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+ />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <title>Ecommerce Website</title>
+  </head>
+  <body>
+
+    <!--=============== HEADER ===============-->
+      <header class="header">
+      <div class="header__top">
+        <div class="header__container container">
+          <div class="header__contact">
+            <span>(+91) -2345 -6XXX</span>
+
+            
+          </div>
+
+          <p class="header--alert-news">
+             Save more with coupons upto 30 off
+          </p>
+
+          <a href="login-register.html" class="header__top-action">
+            Log In / Sign Up
+          </a>
+        </div>
+      </div>
+
+      <nav class="nav container">
+        <a href="index.html" class="nav__logo">
+          <img src="assets/img/logo.svg" alt="" class="nav__logo-img" />
+        </a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="index.html" class="nav__link ">Home</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="shop.html" class="nav__link">Shop</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="accounts.html" class="nav__link active-link">My Account</a>
+            </li>
+
+           
+
+            <li class="nav__item">
+              <a href="login-register.html" class="nav__link ">Login</a>
+            </li>
+            
+
+          </ul>
+
+          <div class="header__search">
+            <input type="text" placeholder="Search for items..." 
+            class="form__input"
+            />
+
+            <button class="search__btn">
+              <img src="assets/img/search.png" alt="" />
+            </button>
+          </div>
+        </div>
+
+        <div class="header__user-actions">
+          <a href="wishlist.html" class="header__action-btn">
+            <img src="assets/img/icon-heart.svg" alt="">
+            <span class="count">3</span>
+          </a>
+
+           <a href="cart.html" class="header__action-btn">
+            <img src="assets/img/icon-cart.svg" alt="">
+            <span class="count">3</span>
+          </a>
+
+
+
+
+
+        </div>
+      </nav>
+    </header>
+    <!--=============== MAIN ===============-->
+    <main class="main">
+      <!--=============== BREADCRUMB ===============-->
+      <section class="breadcrumb">
+        <ul class="breadcrumb__list flex container">
+          <li><a href="index.html" class="breadcrumb__link">Home</a></li>
+          <li><span class="breadcrumb__link">></span></li>
+          <li><span class="breadcrumb__link">Account</span></li>
+        </ul>
+        </ul>
+      </section>
+
+      <!--=============== ACCOUNTS ===============-->
+      <section class="accounts section--lg">
+        <div class="accounts__container container grid">
+          <div class="account__tabs">
+            <p class="account__tab active-tab" data-target="#dashboard">
+              <i class="fi fi-rs-settings-sliders"></i> Dashboard
+            </p>
+
+            <p class="account__tab" data-target="#orders">
+              <i class="fi fi-rs-shopping-bag"></i> Orders
+            </p>
+
+
+            <p class="account__tab" data-target="#update-profile">
+              <i class="fi fi-rs-user"></i> Update Profile
+            </p>
+
+
+             <p class="account__tab" data-target="#address">
+              <i class="fi fi-rs-marker"></i> My Address
+            </p>
+
+
+             <p class="account__tab" data-target="#change-password">
+              <i class="fi fi-rs-user"></i> Change Password
+            </p>
+
+             <p class="account__tab" >
+              <i class="fi fi-rs-exit"></i> Logout
+            </p>
+          </div>
+
+          <div class="tabs__content">
+          <div class="tab__content active-tab" content id="dashboard">
+            <h3 class="tab__header">Hello Akriti!</h3>
+
+            <div class="tab__body">
+              <p class="tab__description">
+                From your account dashboard you can easily view & check your edit password account details recent orders.
+              </p>
+            </div>
+          </div>
+
+           <div class="tab__content" content id="orders">
+            <h3 class="tab__header">Your Orders</h3>
+
+            <div class="tab__body">
+              <table class="placed__order-table">
+                <tr>
+                  <th>Orders</th>
+                  <th>Date</th>
+                  <th>Status</th>
+                  <th>Total</th>
+                  <th>Actions</th>
+                </tr>
+
+                <tr>
+                  <td>#1070</td>
+                  <td>August 20, 2024</td>
+                  <td>Processing</td>
+                  <td>₹250.00</td>
+                  <td><a href="#" class="view__order">View</a></td>
+                </tr>
+
+                <tr>
+                <td>#1160</td>
+                  <td>September 29, 2024</td>
+                  <td>Completed</td>
+                  <td>₹300.00</td>
+                  <td><a href="#" class="view__order">View</a> </td>
+                </tr>
+
+                  <tr>
+                  <td>#1230</td>
+                  <td>October 7, 2024</td>
+                  <td>Completed</td>
+                  <td>₹150.00</td>
+                  <td><a href="#" class="view__order">View</a> </td>
+                </tr>
+              </table>
+          </div>
+          </div>
+
+           <div class="tab__content" content id="update-profile">
+            <h3 class="tab__header">Update Profile</h3>
+
+            <div class="tab__body">
+              <form action="" class="form grid">
+                <input type="text" placeholder="Username"
+                class="form__input">
+
+                <div class="form__btn">
+                  <button class="btn btn--md">Save</button>
+                </div>
+              </form>
+            </div>
+          </div>
+
+
+           <div class="tab__content" content id="address">
+            <h3 class="tab__header">Shipping Address</h3>
+
+            <div class="tab__body">
+              <address class="address">
+                2550 Interstate <br />
+                 56 BL Bussiness ,<br />
+                  Place .<br /> AI 6785 XX
+              </address>  
+              <P class="city">Prayagraj</P> 
+              <a href="" class="edit" >Edit</a>    
+            </div>
+          </div>
+
+           <div class="tab__content" content id="change-password">
+            <h3 class="tab__header">Change Password</h3>
+
+            <div class="tab__body">
+              <form action="" class="form grid">
+                <input
+                type="password"
+                placeholder="Current Password"
+                class="form__input"
+                />
+
+                <input
+                type="password"
+                placeholder="New Password"
+                class="form__input"
+                />
+
+
+                <input
+                type="password"
+                placeholder="Confirm Password"
+                class="form__input"
+                />
+                
+
+                <div class="form__btn">
+                  <button class="btn btn--md">Save</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+      <!--=============== NEWSLETTER ===============-->
+      <section class="newsletter"></section>
+    </main>
+
+    <!--=============== FOOTER ===============-->
+    <footer class="footer container">
+      <div class="footer__container grid">
+        <div class="footer__content">
+          <a href="index.html" class="footer__logo">
+            <img src="assets/img/logo.svg" alt="" class="footer__logo-img">
+          </a>
+
+          <h4 class="footer__subtitle">Contact</h4>
+
+         <p class="footer__description">
+          <span>Address:</span> 2XX Civil Lines , Prayagraj
+         </p>
+
+         <p class="footer__description">
+          <span>Phone:</span> 123-564-78XX
+         </p>
+
+         <p class="footer__description">
+          <span>Hours:</span> 10:00 - 20:00, Mon - Sat
+         </p>
+
+         <div class="footer__social">
+          <h4 class="footer__subtitle">Follow Me</h4>
+
+          <div class="footer__social-links flex">
+            <a href="">
+              <img src="assets/img/icon-facebook.svg"
+               alt=""
+                class="footer__social-icon"
+              />
+            </a>
+
+            <a href="">
+              <img src="assets/img/icon-twitter.svg"
+               alt=""
+                class="footer__social-icon"
+              />
+            </a>
+
+            <a href="">
+              <img src="assets/img/icon-instagram.svg"
+               alt=""
+                class="footer__social-icon"
+              />
+            </a>
+
+            <a href="">
+              <img src="assets/img/icon-pinterest.svg"
+               alt=""
+                class="footer__social-icon"
+              />
+            </a>
+
+            <a href="">
+              <img src="assets/img/icon-youtube.svg"
+               alt=""
+                class="footer__social-icon"
+              />
+            </a>
+          </div>
+         </div>
+        </div>
+
+        <div class="footer__content">
+          <h3 class="footer__title">Address</h3>
+
+          <ul class="footer__links">
+            <li><a href="" class="footer__link">About Use</a></li>
+             <li><a href="" class="footer__link">Privacy Policy</a></li>
+              <li><a href="" class="footer__link">Terms & Conditions</a></li>
+               <li><a href="" class="footer__link">Contact Us</a></li>
+                <li><a href="" class="footer__link">Support Center</a></li>
+          </ul>
+        </div>
+
+
+         <div class="footer__content">
+          <h3 class="footer__title">My Account</h3>
+
+          <ul class="footer__links">
+            <li><a href="" class="footer__link">Sign In</a></li>
+             <li><a href="" class="footer__link">View Cart</a></li>
+              <li><a href="" class="footer__link">My Wishlist</a></li>
+               <li><a href="" class="footer__link">Help</a></li>
+                <li><a href="" class="footer__link">Order</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__content">
+          <h3 class="footer__title">Secured Payment Gateways</h3>
+
+          <img src="assets/img/payment-method.png"
+           alt=""
+           class="payment__img">
+        </div>
+      </div>
+    </footer>
+
+    <!--=============== SWIPER JS ===============-->
+     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
